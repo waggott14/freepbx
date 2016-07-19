@@ -1,0 +1,15 @@
+PBX_URL = 'http://pbx.something.net'
+PBX_USERNAME = 'root'
+PBX_PASSWORD = 'root'
+
+EXTENSIONS = {
+    'SIP/999': {
+        'name': 'Johnny',
+        'email': 'johnny@example.com'
+    }
+}
+
+SMTP_SERVER = 'smtp.gmail.com'
+SMTP_USER = 'stats@example.com'
+SMTP_PASSWORD = 'stats'
+SMTP_FROM = 'Call Stats <stats@example.com>'
