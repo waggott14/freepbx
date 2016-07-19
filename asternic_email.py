@@ -110,6 +110,12 @@ The Call Stats Robot
         self.get_callstats('incoming')
         self.get_callstats('outgoing')
 
+    def set_day(self):
+        # Set to start of day
+        self.start = arrow.get().replace(hour=0, minute=0, second=0)
+        # Roll to end of day
+        self.end = arrow.get().replace(hour=23, minute=59, second=59)
+
     def set_month(self):
         # Set to start of month
         self.start = arrow.get().replace(day=1, hour=0, minute=0, second=0)
